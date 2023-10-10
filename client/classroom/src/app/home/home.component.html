@@ -4,21 +4,14 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 
 </head>
-
-<body ng-app="classroom">
-  
+<body ng-app="classroom">  
   <div id="layoutContainer" ng-controller="layoutController as ctrl" ng-cloak fxLayout="column">
-    <!-- Big box layout -->
     <div class="big-box">
       <h1>welcome to virtual classroom</h1>
     </div>
-    <!-- Side and Home layout -->
     <div class="side-and-home">
-      <!-- Side box layout -->
-      <div class="side-box" >
-        
+      <div class="side-box" >    
         <button class="box" [routerLink]="['/home']">home</button>
         <button class="box" [routerLink]="['/home/addclassroom']">classroom</button>
         <button class="box" [routerLink]="['/home/student']">student</button>
@@ -26,9 +19,9 @@
         <button class="box" [routerLink]="['/home/submitassignment']">submitassignment</button>
       </div>
       <div class="home">
-        <router-outlet></router-outlet>
-      </div>
+      <router-outlet></router-outlet>
     </div>
+  </div>
   </div>
 </body>
 </html>
