@@ -9,23 +9,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 
 </head>
-
 <body ng-app="addclassroom"> 
-  <!-- app.component.html -->
   <div id="layoutContainer" fxLayout="column">
-    <!-- Side box layout -->
     <div fxLayout="row">
       <div class="side-box" fxLayout="column">
         <p>classname:<input type="text" [(ngModel)]="newclassroom" /></p>
         <p>starttime: <input type="text" [(ngModel)]="starttime" /></p>
         <p>endtime: <input type="text" [(ngModel)]="endtime" /></p>
         <p>subject: <input type="text" [(ngModel)]="subject" /></p>
-        
         <button (click)="additem()">schedule</button>
       </div>
-    
       <div class="big-box">
        <p>list of classroom</p> 
         <ul>
@@ -41,11 +35,9 @@
 <div *ngFor="let student of selectedClassroom.students">
   {{ student }}
 </div>
-
-        </div>
-      </div>
-      
-    </div>
+  </div>
+  </div>
+  </div>
   </div>
 </body>
 </html>
