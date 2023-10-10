@@ -1,8 +1,6 @@
-// auth.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
 interface Credentials {
   id: String,
   name: String,
@@ -20,14 +18,10 @@ interface userData {
 })
 export class AuthService {
   private apiUrl = 'http://localhost:3000'; 
-
   constructor(private http: HttpClient) { }
-
   signUp(userData:userData): Observable<any> {
     return this.http.post(`${this.apiUrl}/signup`, userData);
   }
-
-  login(credentials: Credentials): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, credentials);
-  }
+login(credentials: Credentials): Observable<any> {
+ return this.http.post(`${this.apiUrl}/login`, credentials);}
 }
