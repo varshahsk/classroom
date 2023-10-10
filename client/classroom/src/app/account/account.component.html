@@ -1,0 +1,19 @@
+<body ng-app="account"> 
+<div id="layoutContainer" fxLayout="column">
+    <div fxLayout="row">
+      <div class="big-box">
+        <div>
+          <button *ngFor="let classroom of classrooms" (click)="showClassroomDetails(classroom)">
+            {{ classroom }}
+          </button>
+        </div>
+        <div *ngIf="selectedClassroom">
+          <h2>Classroom Details</h2>
+          <p>Name: {{ selectedClassroom.name }}</p>
+          <p>Students: {{ selectedClassroom.students.join(', ') }}</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>

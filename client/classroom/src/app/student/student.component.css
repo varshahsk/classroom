@@ -1,0 +1,111 @@
+p {
+    font-size: 16px;
+      text-shadow: 2px 2px 5px blue;
+      font-weight: bold;
+      color:black
+  }
+  .home img {
+    max-width: 70%;
+    display: block;
+    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    height: 50%;
+    right: 0;
+  }
+  
+    input {
+    background-color: aquamarine;
+    width: 50%; 
+    padding: 6px; 
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  textarea
+    {
+    background-color: aquamarine;
+    width: 50%; 
+    padding: 6px; 
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    }textarea
+  
+  
+      .box {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-style: inset;
+        margin-bottom: 10px;
+      }
+  
+      .green {
+        background: green;
+      }
+  
+      .blue {
+        background: blue;
+      }
+      img {
+       
+    max-width: 70%; 
+    display: block; 
+    margin-top:100px; 
+    position: fixed;
+    top: 0;
+    height: 50%;
+    right: 0;
+  }button{
+  display: inline-block;
+      padding: 10px 20px; 
+      margin-right:300px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 16px;
+      border: 2px solid blue;}
+      table {
+        border-collapse: collapse;
+        width: 50%; 
+      }
+  
+      th, td {
+        border: 1px solid;
+        padding: 8px; 
+        text-align: center;
+      }
+      .big-box {
+        height: 300px;
+        background: aquamarine;
+        color: rgb(13, 12, 12);
+        text-align: center;
+        padding: 20px;
+        border-style: inset;
+        width: 1500px;
+      }
+  
+      .side-box {
+        
+        width: 900px;
+       
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-style: inset;
+        height: 400px;
+      }
+  
+   
+      span {
+      cursor: pointer;
+      color: red;
+      font-weight: bold;
+    }

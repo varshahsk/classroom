@@ -1,0 +1,29 @@
+
+<body >
+<h2>Welcome to Virtual Classroom Manager</h2>
+<router-outlet >
+<form (ngSubmit)="handleLogin()" #loginForm="ngForm">
+    <label for="id">ID:</label>
+  
+    <input type="text" id="id" [(ngModel)]="credentials.id" name="id" required>
+    <label for="name">name:</label>
+    <input type="name" id="name" [(ngModel)]="credentials.name" name="name" required>
+
+  <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="credentials.password" name="password" required>
+  <br>
+ 
+    <label>User Type:</label>
+    <input type="radio" id="staff" name="userType" value="staff" ngModel required>
+    <label for="staff">Staff</label>
+    <input type="radio" id="student" name="userType" value="student" ngModel required>
+    <label for="student">Student</label><br>
+
+    <button type="submit">Login</button>
+</form>
+</router-outlet>
+
+<p class="signup-link">Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+
+</body>

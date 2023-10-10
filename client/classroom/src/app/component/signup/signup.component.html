@@ -1,0 +1,24 @@
+
+<h2>Sign Up</h2>
+<form action="/signup" method="post" (ngSubmit)="handleSignUp()" #signupForm="ngForm">
+    <label for="id">ID:</label>
+  
+    <input type="text" id="id" [(ngModel)]="credentials.id" name="id" required>
+    <label for="name">name:</label>
+    <input type="name" id="name" [(ngModel)]="credentials.name" name="name" required>
+
+  <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="credentials.password" name="password" required>
+  <br>
+
+    <label>User Type:</label>
+    <input type="radio" id="staff" name="userType" value="staff" [(ngModel)]="credentials.userType"required>
+    <label for="staff">Staff</label>
+    <input type="radio" id="student" name="userType" value="student" [(ngModel)]="credentials.userType" required>
+    <label for="student">Student</label><br>
+
+    <button type="submit">Sign Up</button>
+</form>
+
+<p>Already have an account? <a routerLink="">Login</a></p>
