@@ -1,15 +1,15 @@
 module.exports = {
-    info: {
-      title: 'Classroom API',
-      version: '1.0.0',
-      description: 'API documentation for the Classroom application',
+info: {
+    title: 'Classroom API',
+    version: '1.0.0',
+    description: 'API documentation for the Classroom application',
     },
     basePath: '/',
     schemes: ['http', 'https'], 
     consumes: ['application/json'], 
     produces: ['application/json'], 
     paths: {
-      '/signup': {
+    '/signup': {
         post: {
           summary: 'Create a new user',
           tags: ['User'],
@@ -64,13 +64,7 @@ module.exports = {
                           id: { type: 'string' },
                           name: { type: 'string' },
                           userType: { type: 'string' },
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
+                        }, }, },}, },}, },
             400: {
               description: 'Bad request',
               content: {
@@ -79,11 +73,7 @@ module.exports = {
                     type: 'object',
                     properties: {
                       error: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
+                    },}, },},},
             500: {
               description: 'Internal server error',
               content: {
@@ -92,14 +82,7 @@ module.exports = {
                     type: 'object',
                     properties: {
                       error: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
+                 },}, },},}, }, },},
       '/login': {
         post: {
           summary: 'User login',
@@ -113,13 +96,13 @@ module.exports = {
               schema: {
                 type: 'object',
                 properties: {
-                  id: { type: 'string' },
-                  password: { type: 'string' },
+                 id: { type: 'string' },
+                    name: { type: 'string' },
+                    password: { type: 'string' },
+                    userType: { type: 'string' },
                 },
-                required: ['id', 'password'],
-              },
-            },
-          ],
+                required: ['id', 'password','name','userType'],
+              },}, ],
           requestBody: {
             description: 'User credentials for login',
             required: true,
@@ -132,10 +115,7 @@ module.exports = {
                     password: { type: 'string' },
                   },
                   required: ['id', 'password'],
-                },
-              },
-            },
-          },
+                },},},},
           responses: {
             200: {
               description: 'Login successful',
@@ -151,13 +131,7 @@ module.exports = {
                           id: { type: 'string' },
                           name: { type: 'string' },
                           userType: { type: 'string' },
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
+                        }, },},}, }, }, },
             401: {
               description: 'Invalid credentials',
               content: {
@@ -166,11 +140,7 @@ module.exports = {
                     type: 'object',
                     properties: {
                       error: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
+                    },},  }, }, },
             500: {
               description: 'Internal server error',
               content: {
@@ -179,14 +149,7 @@ module.exports = {
                     type: 'object',
                     properties: {
                       error: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
+                    },},},},}, },}, },
       '/upload': {
         post: {
           summary: 'Upload a file',
@@ -225,11 +188,7 @@ module.exports = {
                     properties: {
                       message: { type: 'string' },
                       filename: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
+     },},},  },},
             400: {
               description: 'Bad request',
               content: {
@@ -237,11 +196,7 @@ module.exports = {
                   schema: {
                     type: 'object',
                     properties: {
-                      error: { type: 'string' },
-                    },
-                  },
-                },
-              },
+                      error: { type: 'string' },},}, }, },
             },
             500: {
               description: 'Internal server error',
@@ -251,15 +206,6 @@ module.exports = {
                     type: 'object',
                     properties: {
                       error: { type: 'string' },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-    
-  };
+                    }, },},}, }, }, }, }, },
+    };
   
